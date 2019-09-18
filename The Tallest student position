@@ -1,3 +1,20 @@
+/*
+Sample Input:
+4
+5
+5 4 3 1 2
+6 
+3 2 1 5 4 1
+7
+3 2 1 5 4 1 2
+7
+5 2 1 5 4 1 2
+Sample output:
+1
+1
+4
+4
+*/
 #include<stdio.h>
 int main()
 {
@@ -15,7 +32,7 @@ int main()
 		{
 			sec=0;
 		    scanf("%d",&sec);
-		    //printf("%d ",sec);
+	
 			if(fir>sec)
 			{
 				if(cnt1==0)
@@ -28,17 +45,13 @@ int main()
 				if(cnt2==0)
 				{
 					cnt2=cnt1;
-					//fir=sec;
-					//cnt1=0;
-					//printf("%d ",cnt2);
+	
 				}
 				else if(cnt1>cnt2)
 				{
 					cnt2=cnt1;
 					ind=j;
-					//fir=sec;
-					//cnt1=0;
-					//printf("%d ",cnt2);
+				
 				}
 				fir=sec;
 				cnt1=0;
@@ -55,7 +68,7 @@ int main()
 					fir=sec;
 					cnt1=0;
 				}
-				//printf("%d ",cnt2);
+			
 		}
 		printf("%d ",ind+1);
 	}
